@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "jokeapi"
+version = "0.1.0"
+description = ""
+authors = ["ahsan <ahsan.zaman@ideascale.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = "^0.115.5"
+uvicorn = "^0.32.1"
+langchain = "^0.3.8"
+huggingface-hub = "^0.26.2"
+transformers = "^4.46.3"
+python-dotenv = "^1.0.1"
+langchain-huggingface = "^0.1.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
