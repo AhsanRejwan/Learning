@@ -2,7 +2,7 @@ import os
 from fastapi import FastAPI
 from dotenv import load_dotenv
 from langchain.smith.evaluation.runner_utils import logger
-from langchain_huggingface import HuggingFaceEndpoint, ChatHuggingFace
+from langchain_huggingface import HuggingFaceEndpoint
 from sympy.physics.units import temperature
 from torch.backends.mkl import verbose
 
@@ -23,6 +23,4 @@ def joke():
     )
 
     response = llm.invoke('Tell me a knock knock joke')
-    logger.debug(response)
-
     return {"joke" : response}
